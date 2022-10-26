@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "441552614024",
+    "project_id": "pazarama-finalproject",
+    "storage_bucket": "pazarama-finalproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:441552614024:android:31dff716f2a14e7dd1653d",
+        "android_client_info": {
+          "package_name": "com.yamanf.shoppingapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "441552614024-dhchta1p4fk0jukdvbcfmiq9mv4u6gar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.yamanf.shoppingapp",
+            "certificate_hash": "74d5ad27df4144fc9a7fc3ea56c8b8d616d96189"
+          }
+        },
+        {
+          "client_id": "441552614024-3mtkv5b1sda78ljl3cajsct64711sata.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBe00x4q5QQU1HSL1QDYL_gbFYSuFh3kDg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "441552614024-3mtkv5b1sda78ljl3cajsct64711sata.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
