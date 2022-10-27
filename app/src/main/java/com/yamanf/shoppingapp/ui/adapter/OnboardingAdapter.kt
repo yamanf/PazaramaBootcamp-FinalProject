@@ -35,7 +35,4 @@ class OnboardingAdapter(
         return 3
     }
 
-
-
-
 }

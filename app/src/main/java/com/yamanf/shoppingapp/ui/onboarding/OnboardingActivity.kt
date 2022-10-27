@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.TextView
 import androidx.viewpager2.widget.ViewPager2
 import com.tbuonomo.viewpagerdotsindicator.DotsIndicator
 import com.yamanf.shoppingapp.MainActivity
@@ -16,6 +17,7 @@ class OnboardingActivity : AppCompatActivity() {
     private lateinit var mViewPager: ViewPager2
     private lateinit var btnBack: Button
     private lateinit var btnNext: Button
+    private lateinit var tvSkip: TextView
     private lateinit var binding: ActivityOnboardingBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,6 +31,7 @@ class OnboardingActivity : AppCompatActivity() {
         mViewPager.offscreenPageLimit = 1
         btnBack = binding.btnPreviousStep
         btnNext = binding.btnNextStep
+        tvSkip = binding.textSkip
         dotsIndicator.attachTo(mViewPager)
         binding.textSkip.setOnClickListener {
             finish()
@@ -46,8 +49,10 @@ class OnboardingActivity : AppCompatActivity() {
 
                 if (position == 2) {
                     btnNext.text = getText(R.string.finish)
+                    tvSkip.visibility = View.GONE
                 } else {
                     btnNext.text = getText(R.string.next)
+                    tvSkip.visibility = View.VISIBLE
                 }
             }
             override fun onPageScrolled(arg0: Int, arg1: Float, arg2: Int) {}
