@@ -1,13 +1,14 @@
 {
   "project_info": {
     "project_number": "441552614024",
+    "firebase_url": "https://pazarama-finalproject-default-rtdb.firebaseio.com",
     "project_id": "pazarama-finalproject",
     "storage_bucket": "pazarama-finalproject.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:441552614024:android:31dff716f2a14e7dd1653d",
+        "mobilesdk_app_id": "1:441552614024:android:fe29855dc71bbc08d1653d",
         "android_client_info": {
           "package_name": "com.yamanf.shoppingapp"
         }
