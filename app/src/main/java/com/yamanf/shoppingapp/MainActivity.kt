@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import com.yamanf.shoppingapp.databinding.ActivityMainBinding
+import com.yamanf.shoppingapp.ui.auth.AuthActivity
 import com.yamanf.shoppingapp.ui.onboarding.OnboardingActivity
 
 class MainActivity : AppCompatActivity() {
@@ -22,6 +23,11 @@ class MainActivity : AppCompatActivity() {
             R.id.button -> {
                 val intent =
                     Intent(applicationContext, OnboardingActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.button2 -> {
+                val intent =
+                    Intent(applicationContext, AuthActivity::class.java)
                 startActivity(intent)
             }
         }
