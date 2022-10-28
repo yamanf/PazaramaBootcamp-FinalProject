@@ -16,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
         binding.apply {
-            shopLogo.animate().setDuration(2500).alpha(1f).withEndAction{
+            shopLogo.animate().setDuration(500).alpha(1f).withEndAction{
                 val intent = Intent(this@SplashActivity, MainActivity::class.java)
                 startActivity(intent)
                 overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
