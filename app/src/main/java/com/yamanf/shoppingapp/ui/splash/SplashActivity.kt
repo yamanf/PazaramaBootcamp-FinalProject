@@ -1,10 +1,11 @@
-package com.yamanf.shoppingapp
+package com.yamanf.shoppingapp.ui.splash
 
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.yamanf.shoppingapp.MainActivity
 import com.yamanf.shoppingapp.databinding.ActivitySplashBinding
 import com.yamanf.shoppingapp.ui.onboarding.OnboardingActivity
 

@@ -19,7 +19,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".SplashActivity"
+            android:name=".ui.splash.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.ShoppingApp">
             <intent-filter>
