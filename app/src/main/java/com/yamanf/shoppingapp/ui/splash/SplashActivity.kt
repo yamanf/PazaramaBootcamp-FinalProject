@@ -7,7 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.yamanf.shoppingapp.MainActivity
 import com.yamanf.shoppingapp.databinding.ActivitySplashBinding
+import com.yamanf.shoppingapp.ui.auth.AuthActivity
 import com.yamanf.shoppingapp.ui.onboarding.OnboardingActivity
+import com.yamanf.shoppingapp.utils.FirebaseManager
 
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
@@ -23,17 +25,17 @@ class SplashActivity : AppCompatActivity() {
 
         binding.apply {
             shopLogo.animate().setDuration(2500).alpha(1f).withEndAction{
-                if (isFirstTime){
+                if (FirebaseManager.isUserSignIn()&&isFirstTime==false){
+                    startActivity(Intent(this@SplashActivity,MainActivity::class.java))
+                    finish()
+                }else if(FirebaseManager.isUserSignIn()==false && isFirstTime==false){
+                    startActivity(Intent(this@SplashActivity,AuthActivity::class.java))
+                    finish()
+                }else if (isFirstTime==true){
                     val editor = onBoarding.edit()
                     editor.putBoolean("firstTime",false)
                     editor.apply()
-                    val intent = Intent(this@SplashActivity, OnboardingActivity::class.java)
-                    startActivity(intent)
-                    overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
-                    finish()
-                }else{
-                    val intent = Intent(this@SplashActivity, MainActivity::class.java)
-                    startActivity(intent)
+                    startActivity(Intent(this@SplashActivity, OnboardingActivity::class.java))
                     overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out)
                     finish()
                 }
