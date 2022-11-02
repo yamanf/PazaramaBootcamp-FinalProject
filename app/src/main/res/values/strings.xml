@@ -22,5 +22,6 @@
     <string name="home">Home</string>
     <string name="search">Search</string>
     <string name="profile">Profile</string>
+    <string name="product_image">Product Image</string>
 
 </resources>

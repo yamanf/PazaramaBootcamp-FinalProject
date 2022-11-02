@@ -10,7 +10,9 @@ import com.yamanf.shoppingapp.databinding.ActivitySplashBinding
 import com.yamanf.shoppingapp.ui.auth.AuthActivity
 import com.yamanf.shoppingapp.ui.onboarding.OnboardingActivity
 import com.yamanf.shoppingapp.utils.FirebaseManager
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
 

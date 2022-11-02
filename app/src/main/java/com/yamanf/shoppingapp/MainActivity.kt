@@ -22,7 +22,9 @@ import com.yamanf.shoppingapp.ui.onboarding.OnboardingActivity
 import com.yamanf.shoppingapp.ui.product.ProductFragment
 import com.yamanf.shoppingapp.ui.profile.ProfileFragment
 import com.yamanf.shoppingapp.ui.search.SearchFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -32,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.hide() // Hiding SystemUI
-
         navController=Navigation.findNavController(this,R.id.fragmentContainerView)
         setupWithNavController(binding.bottomNavigationView,navController)
     }
