@@ -19,5 +19,8 @@
     <string name="e_mail">E-Mail</string>
     <string name="username">Username</string>
     <string name="password_repeat">Password Repeat</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
 
 </resources>
