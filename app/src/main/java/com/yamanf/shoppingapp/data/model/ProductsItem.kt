@@ -15,5 +15,14 @@ data class ProductsItem(
     @SerializedName("price")
     val price: Double,
     @SerializedName("title")
-    val title: String
-)
+    val title: String,
+    @SerializedName("rating")
+    val rating: Rating
+){
+    data class Rating(
+        @SerializedName("count")
+        val count: Int,
+        @SerializedName("rate")
+        val rate: Double
+    )
+}

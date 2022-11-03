@@ -1,4 +1,4 @@
-package com.yamanf.shoppingapp.ui.product
+package com.yamanf.shoppingapp.ui.product.list
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -17,11 +17,8 @@ class ProductViewModel @Inject constructor(private val apiRepository: ApiReposit
     val result: LiveData<Products> = resultLiveData
 
     init {
-        println("ProductViewModel init")
         viewModelScope.launch {
-            println("ProductViewModel viewModelScope.launch run")
             val resultList = apiRepository.getProductList()
-            delay(1000)
             resultLiveData.value = resultList
         }
     }

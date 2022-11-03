@@ -1,4 +1,4 @@
-package com.yamanf.shoppingapp.ui.product
+package com.yamanf.shoppingapp.ui.product.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,7 +12,6 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class ProductFragment : Fragment(R.layout.fragment_product) {
-    lateinit var ProductAdapter: ProductAdapter
     private val viewModel: ProductViewModel by viewModels()
     private var _binding: FragmentProductBinding? = null
     private val binding get() = _binding!!
@@ -20,11 +19,11 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentProductBinding.bind(view)
-        println("ProductFragment run")
+        configureRecyclerView()
+    }
 
-
+    private fun configureRecyclerView(){
         viewModel.result.observe(viewLifecycleOwner) {
-            println("ProductFragment viewModel.result.observe run")
             binding.rvProductList.layoutManager = GridLayoutManager(context, 2)
             binding.rvProductList.adapter = ProductAdapter(it)
         }
@@ -34,5 +33,6 @@ class ProductFragment : Fragment(R.layout.fragment_product) {
         super.onDestroyView()
         _binding = null
     }
+
 
 }

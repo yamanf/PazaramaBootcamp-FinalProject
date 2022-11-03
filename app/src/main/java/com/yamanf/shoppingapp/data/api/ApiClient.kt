@@ -14,7 +14,6 @@ class ApiClient {
                 .baseUrl(BASE_URL)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build()
-
             apiService = retrofit.create(ApiService::class.java)
         }
         return apiService
