@@ -19,7 +19,7 @@ class FirebaseManager {
                 Firebase.auth.signInWithEmailAndPassword(loginModel.eMail, loginModel.password).addOnSuccessListener {
                     success(it)
                 } .addOnFailureListener {
-                    failure(it.localizedMessage.toString())
+                    failure(it.localizedMessage!!.toString())
                 }
             }
 
@@ -33,7 +33,7 @@ class FirebaseManager {
                     Firebase.auth.createUserWithEmailAndPassword(registerModel.eMail, registerModel.password).addOnSuccessListener {
                         success(it)
                     } .addOnFailureListener {
-                        failure(it.localizedMessage.toString())
+                        failure(it.localizedMessage!!.toString())
                     }
                 }else failure ("Passwords should be same.")
             }

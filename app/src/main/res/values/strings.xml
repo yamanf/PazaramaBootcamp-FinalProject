@@ -19,5 +19,12 @@
     <string name="e_mail">E-Mail</string>
     <string name="username">Username</string>
     <string name="password_repeat">Password Repeat</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="product_image">Product Image</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_title">Product Title</string>
+    <string name="add_to_cart">Add to Cart</string>
 
 </resources>

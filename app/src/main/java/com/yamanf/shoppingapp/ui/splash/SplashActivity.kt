@@ -10,21 +10,22 @@ import com.yamanf.shoppingapp.databinding.ActivitySplashBinding
 import com.yamanf.shoppingapp.ui.auth.AuthActivity
 import com.yamanf.shoppingapp.ui.onboarding.OnboardingActivity
 import com.yamanf.shoppingapp.utils.FirebaseManager
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 @SuppressLint("CustomSplashScreen")
 class SplashActivity : AppCompatActivity() {
-
     private lateinit var binding: ActivitySplashBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val onBoarding: SharedPreferences = getSharedPreferences("onBoardingScreen", MODE_PRIVATE)
-        var isFirstTime = onBoarding.getBoolean("firstTime",true)
+        val isFirstTime = onBoarding.getBoolean("firstTime",true)
         supportActionBar?.hide()
 
         binding.apply {
-            shopLogo.animate().setDuration(2500).alpha(1f).withEndAction{
+            shopLogo.animate().setDuration(500).alpha(1f).withEndAction{
                 if (FirebaseManager.isUserSignIn()&&isFirstTime==false){
                     startActivity(Intent(this@SplashActivity,MainActivity::class.java))
                     finish()
