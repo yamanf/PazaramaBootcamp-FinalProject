@@ -7,7 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.yamanf.shoppingapp.data.model.ProductsItem
 import com.yamanf.shoppingapp.data.repositories.ApiRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.delay
+
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 

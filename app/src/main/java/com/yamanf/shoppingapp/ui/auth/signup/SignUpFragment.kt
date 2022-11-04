@@ -1,6 +1,6 @@
 package com.yamanf.shoppingapp.ui.auth.signup
 
-import android.content.Context
+
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -12,12 +12,13 @@ import androidx.fragment.app.activityViewModels
 import com.yamanf.shoppingapp.MainActivity
 import com.yamanf.shoppingapp.databinding.FragmentSignUpBinding
 import com.yamanf.shoppingapp.ui.auth.AuthViewModel
+import dagger.hilt.android.AndroidEntryPoint
 import java.io.Serializable
 
 
-data class RegisterModel(val userName:String, val eMail:String,val password:String,val passwordRepeat:String):
-    Serializable
+data class RegisterModel(val userName:String, val eMail:String,val password:String,val passwordRepeat:String): Serializable
 
+@AndroidEntryPoint
 class SignUpFragment : Fragment() {
     private var _binding: FragmentSignUpBinding? = null
     private val binding get() = _binding!!

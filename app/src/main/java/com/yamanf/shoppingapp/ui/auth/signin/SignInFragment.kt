@@ -15,9 +15,12 @@ import com.yamanf.shoppingapp.databinding.FragmentSignUpBinding
 import com.yamanf.shoppingapp.ui.auth.AuthActivity
 import com.yamanf.shoppingapp.ui.auth.AuthViewModel
 import com.yamanf.shoppingapp.ui.auth.signup.RegisterModel
+import dagger.hilt.android.AndroidEntryPoint
 import java.io.Serializable
 
 data class LoginModel(val eMail:String,val password:String): Serializable
+
+@AndroidEntryPoint
 class SignInFragment : Fragment() {
     private var _binding: FragmentSignInBinding? = null
     private val binding get() = _binding!!
