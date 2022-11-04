@@ -8,8 +8,9 @@ import android.view.ViewGroup
 import androidx.appcompat.widget.AppCompatTextView
 import com.airbnb.lottie.LottieAnimationView
 import com.yamanf.shoppingapp.databinding.FragmentOnBoardingBinding
+import dagger.hilt.android.AndroidEntryPoint
 
-
+@AndroidEntryPoint
 class OnboardingFragment : Fragment() {
     private var title: String? = null
     private var description: String? = null

@@ -15,7 +15,9 @@ import com.yamanf.shoppingapp.R
 import com.yamanf.shoppingapp.databinding.ActivityAuthBinding
 import com.yamanf.shoppingapp.ui.adapter.AuthAdapter
 import com.yamanf.shoppingapp.ui.auth.signup.SignUpFragment
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class AuthActivity : AppCompatActivity() {
     val authViewModel: AuthViewModel by viewModels()
     private lateinit var mViewPager: ViewPager2

@@ -13,7 +13,9 @@ import com.yamanf.shoppingapp.R
 import com.yamanf.shoppingapp.databinding.ActivityOnboardingBinding
 import com.yamanf.shoppingapp.ui.adapter.OnboardingAdapter
 import com.yamanf.shoppingapp.ui.auth.AuthActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var mViewPager: ViewPager2
     private lateinit var btnBack: Button

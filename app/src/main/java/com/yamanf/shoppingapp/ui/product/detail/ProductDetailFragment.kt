@@ -2,13 +2,9 @@ package com.yamanf.shoppingapp.ui.product.detail
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
-import com.squareup.picasso.Picasso
 import com.yamanf.shoppingapp.R
 import com.yamanf.shoppingapp.databinding.FragmentProductDetailBinding
 import com.yamanf.shoppingapp.utils.Utils.downloadFromUrl

@@ -1,7 +1,7 @@
 package com.yamanf.shoppingapp.utils
 
 import android.widget.ImageView
-import androidx.swiperefreshlayout.widget.CircularProgressDrawable
+
 import com.bumptech.glide.Glide
 
 object Utils {
