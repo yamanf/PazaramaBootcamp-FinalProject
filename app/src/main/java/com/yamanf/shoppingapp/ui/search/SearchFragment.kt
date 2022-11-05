@@ -32,7 +32,6 @@ class SearchFragment : Fragment(R.layout.fragment_search) {
         super.onViewCreated(view, savedInstanceState)
         _binding = FragmentSearchBinding.bind(view)
         binding.searchEditText.setText("")
-        if(binding.searchEditText.)
         binding.searchEditText.doOnTextChanged { text, _, _, _ ->
             val query = text.toString().toLowerCase(Locale.getDefault())
             filterWithQuery(query)
