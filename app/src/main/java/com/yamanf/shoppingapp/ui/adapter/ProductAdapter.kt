@@ -19,17 +19,16 @@ import com.yamanf.shoppingapp.utils.Utils.downloadFromUrl
 class ProductAdapter(val productList: Products) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>(){
 
     class ProductViewHolder(view: View): RecyclerView.ViewHolder(view){
-        val ivProduct: ImageView = view.findViewById(R.id.ivProduct)
-        val tvTitle: TextView = view.findViewById(R.id.tvTitle)
-        val tvPrice: TextView = view.findViewById(R.id.tvPrice)
-        val container : ConstraintLayout = view.findViewById(R.id.container)
+        private val ivProduct: ImageView = view.findViewById(R.id.ivProduct)
+        private val tvTitle: TextView = view.findViewById(R.id.tvTitle)
+        private val tvPrice: TextView = view.findViewById(R.id.tvPrice)
+        private val container : ConstraintLayout = view.findViewById(R.id.container)
 
         @SuppressLint("SetTextI18n")
         fun bindItems(item: ProductsItem) {
             ivProduct.downloadFromUrl(item.image)
             tvTitle.text = item.title
             tvPrice.text = item.price.toString() + " TL"
-
             container.setOnClickListener{
                 it.findNavController().navigate(ProductFragmentDirections.actionProductFragmentToProductDetailFragment(item.id))
             }
