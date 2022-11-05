@@ -29,5 +29,8 @@
     <string name="sign_out">Sign out</string>
     <string name="shop_logo">Shop Logo</string>
     <string name="back_button">BackButton</string>
+    <string name="basket">Basket</string>
+    <string name="close">Close</string>
+    <string name="purchase">Purchase</string>
 
 </resources>

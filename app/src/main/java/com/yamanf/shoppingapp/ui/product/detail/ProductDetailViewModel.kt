@@ -6,6 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.yamanf.shoppingapp.data.model.ProductsItem
 import com.yamanf.shoppingapp.data.repositories.ApiRepository
+import com.yamanf.shoppingapp.utils.FirebaseManager
 import dagger.hilt.android.lifecycle.HiltViewModel
 
 import kotlinx.coroutines.launch
@@ -17,10 +18,14 @@ class ProductDetailViewModel @Inject constructor(private val apiRepository: ApiR
     private val productDetailLiveData = MutableLiveData<ProductsItem>()
     val productDetail: LiveData<ProductsItem> = productDetailLiveData
 
+
     fun getProductDetail(productId: String) {
         viewModelScope.launch {
             val productDetail = apiRepository.getProductDetail(productId)
             productDetailLiveData.value = productDetail
         }
     }
+
+
+
 }

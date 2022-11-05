@@ -8,16 +8,11 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.databinding.DataBindingUtil
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
-import androidx.recyclerview.widget.AsyncListDiffer
-import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.yamanf.shoppingapp.R
 import com.yamanf.shoppingapp.data.model.Products
 import com.yamanf.shoppingapp.data.model.ProductsItem
-import com.yamanf.shoppingapp.databinding.ItemProductListBinding
 import com.yamanf.shoppingapp.ui.product.list.ProductFragmentDirections
 import com.yamanf.shoppingapp.utils.Utils.downloadFromUrl
 
@@ -34,11 +29,9 @@ class ProductAdapter(val productList: Products) : RecyclerView.Adapter<ProductAd
             ivProduct.downloadFromUrl(item.image)
             tvTitle.text = item.title
             tvPrice.text = item.price.toString() + " TL"
+
             container.setOnClickListener{
-                it.findNavController().navigate(
-                    ProductFragmentDirections.actionProductFragmentToProductDetailFragment(item.id)
-                )
-                println("Adapter")
+                it.findNavController().navigate(ProductFragmentDirections.actionProductFragmentToProductDetailFragment(item.id))
             }
         }
     }
