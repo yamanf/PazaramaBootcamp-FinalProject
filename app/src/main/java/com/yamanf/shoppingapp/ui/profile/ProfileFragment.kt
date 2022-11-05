@@ -35,6 +35,7 @@ class ProfileFragment : Fragment() {
     private fun configure() {
         profileViewModel.getUserData {
             binding.tvUsername.text = it.username
+            binding.tvEmail.text = "E-mail: ${it.email}"
         }
     }
 }

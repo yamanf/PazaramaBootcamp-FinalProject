@@ -5,10 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_margin="5dp"
     app:cardCornerRadius="15dp"
-    android:outlineAmbientShadowColor="@color/black"
-
-    android:backgroundTint="#D4D4D4"
-    >
+    android:backgroundTint="#D4D4D4">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/container"

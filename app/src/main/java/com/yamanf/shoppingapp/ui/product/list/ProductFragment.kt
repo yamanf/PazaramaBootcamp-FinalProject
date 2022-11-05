@@ -12,6 +12,7 @@ import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
 class ProductFragment : Fragment(R.layout.fragment_product) {
+
     private val viewModel: ProductViewModel by viewModels()
     private var _binding: FragmentProductBinding? = null
     private val binding get() = _binding!!

@@ -8,7 +8,6 @@ class ApiClient {
     companion object{
     private lateinit var apiService: ApiService
     fun getApiService(): ApiService{
-        println("getApiService run")
         if (!::apiService.isInitialized){
             val retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)

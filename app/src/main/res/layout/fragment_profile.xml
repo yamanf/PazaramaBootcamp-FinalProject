@@ -7,6 +7,7 @@
     tools:context=".ui.profile.ProfileFragment">
 
     <LinearLayout
+        android:id="@+id/profileTop"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_profile"
@@ -34,5 +35,19 @@
             android:layout_weight="2"/>
     </LinearLayout>
 
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/profileTop" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
