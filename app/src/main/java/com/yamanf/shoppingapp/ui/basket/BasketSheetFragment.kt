@@ -68,7 +68,7 @@ class BasketSheetFragment : BottomSheetDialogFragment(R.layout.fragment_basket_s
                 Toast.makeText(requireContext(),"You can continue shopping. ",Toast.LENGTH_LONG).show()
             }
         }
-        
+
         val dialog: AlertDialog = builder.create()
         dialog.show()
     }

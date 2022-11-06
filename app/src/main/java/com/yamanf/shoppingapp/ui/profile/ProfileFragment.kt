@@ -6,7 +6,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.activityViewModels
-
 import com.yamanf.shoppingapp.databinding.FragmentProfileBinding
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -34,8 +33,8 @@ class ProfileFragment : Fragment() {
 
     private fun configure() {
         profileViewModel.getUserData {
-            binding.tvUsername.text = it.username
-            binding.tvEmail.text = "E-mail: ${it.email}"
+            binding.tvUsername.text = "@${it.username}"
+            binding.tvEmail.text = it.email
         }
     }
 }
