@@ -25,7 +25,7 @@ class SplashActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         binding.apply {
-            shopLogo.animate().setDuration(500).alpha(1f).withEndAction{
+            shopLogo.animate().setDuration(2500).alpha(1f).withEndAction{
                 if (FirebaseManager.isUserSignIn()&&isFirstTime==false){
                     startActivity(Intent(this@SplashActivity,MainActivity::class.java))
                     finish()
