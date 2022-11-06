@@ -6,9 +6,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.yamanf.shoppingapp.data.model.ProductsItem
 import com.yamanf.shoppingapp.data.repositories.ApiRepository
-import com.yamanf.shoppingapp.utils.FirebaseManager
 import dagger.hilt.android.lifecycle.HiltViewModel
-
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
