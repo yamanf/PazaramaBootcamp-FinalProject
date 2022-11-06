@@ -36,7 +36,7 @@ class ProductDetailFragment : Fragment(R.layout.fragment_product_detail) {
             binding.numberPicker.minValue = 1
             binding.btnAdd.setOnClickListener(){
                 val amount = binding.numberPicker.value
-                FirebaseManager.saveToBasket(productsItem.id.toString(),amount.toDouble(),productsItem.title,productsItem.price.toDouble(),productsItem.image){
+                FirebaseManager.saveToBasket(productsItem.id.toString(),amount.toDouble(),productsItem.title,productsItem.price,productsItem.image){
                     if (it){
                         Toast.makeText(requireContext(),"$amount item added to basket.",Toast.LENGTH_SHORT).show()
                     }else Toast.makeText(requireContext(),"Upps! Something goes wrong.",Toast.LENGTH_SHORT).show()
