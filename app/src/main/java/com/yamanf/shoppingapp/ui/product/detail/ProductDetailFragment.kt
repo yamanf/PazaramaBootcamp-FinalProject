@@ -9,6 +9,7 @@ import androidx.navigation.Navigation
 import androidx.navigation.fragment.navArgs
 import com.yamanf.shoppingapp.R
 import com.yamanf.shoppingapp.databinding.FragmentProductDetailBinding
+import com.yamanf.shoppingapp.utils.Constants
 import com.yamanf.shoppingapp.utils.FirebaseManager
 import com.yamanf.shoppingapp.utils.Utils.downloadFromUrl
 import dagger.hilt.android.AndroidEntryPoint
@@ -31,11 +32,24 @@ class ProductDetailFragment : Fragment(R.layout.fragment_product_detail) {
             binding.tvDescription.text = ProductsItem.description
             binding.productRating.rating = ProductsItem.rating.rate.toFloat()
 
-            // Num picker
-            binding.numberPicker.maxValue = 10
-            binding.numberPicker.minValue = 1
+            // Quantity Picker
+            var amount = 1
+            binding.etAmount.text = amount.toString()
+            binding.btnMinus.setOnClickListener(){
+                if (amount>Constants.minItemAmount){
+                    amount -= 1
+                }
+                binding.etAmount.text = amount.toString()
+            }
+            binding.btnPlus.setOnClickListener(){
+                if (amount<Constants.maxItemAmount){
+                    amount += 1
+                }
+                binding.etAmount.text = amount.toString()
+            }
+
+            // Adding to basket
             binding.btnAdd.setOnClickListener(){
-                val amount = binding.numberPicker.value
                 FirebaseManager.saveToBasket(productsItem.id.toString(),amount.toDouble(),productsItem.title,productsItem.price,productsItem.image){
                     if (it){
                         Toast.makeText(requireContext(),"$amount item added to basket.",Toast.LENGTH_SHORT).show()
