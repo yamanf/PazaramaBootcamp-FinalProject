@@ -12,7 +12,10 @@ import com.yamanf.shoppingapp.MainActivity
 import com.yamanf.shoppingapp.R
 import com.yamanf.shoppingapp.databinding.ActivityOnboardingBinding
 import com.yamanf.shoppingapp.ui.adapter.OnboardingAdapter
+import com.yamanf.shoppingapp.ui.auth.AuthActivity
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class OnboardingActivity : AppCompatActivity() {
     private lateinit var mViewPager: ViewPager2
     private lateinit var btnBack: Button
@@ -35,9 +38,7 @@ class OnboardingActivity : AppCompatActivity() {
         dotsIndicator.attachTo(mViewPager)
         binding.textSkip.setOnClickListener {
             finish()
-            val intent =
-                Intent(applicationContext, MainActivity::class.java)
-            startActivity(intent)
+            startActivity(Intent(this@OnboardingActivity, AuthActivity::class.java))
         }
         mViewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
             override fun onPageSelected(position: Int) {
@@ -61,6 +62,7 @@ class OnboardingActivity : AppCompatActivity() {
 
         btnNext.setOnClickListener {
             if (getItem() > mViewPager.childCount) {
+                startActivity(Intent(this@OnboardingActivity, AuthActivity::class.java))
                 finish()
             } else {
                 mViewPager.setCurrentItem(getItem() + 1, true)

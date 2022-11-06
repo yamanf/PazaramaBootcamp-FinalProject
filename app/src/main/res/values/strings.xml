@@ -3,21 +3,35 @@
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="onboarding1_title">Shop Online Products</string>
-    <string name="onboarding1_desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</string>
+    <string name="onboarding1_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin varius tempus mi. In id varius ligula, eu lobortis nibh. Vivamus at ex vestibulum, facilisis velit in, fermentum libero.</string>
     <string name="onboarding2_title">Fastest Delivery</string>
-    <string name="onboarding2_desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</string>
+    <string name="onboarding2_desc"> Aliquam eu facilisis dolor. Suspendisse consequat, arcu nec venenatis malesuada, ipsum metus maximus enim, in aliquam est eros eu odio.</string>
     <string name="onboarding3_title">Contactless Delivery</string>
-    <string name="onboarding3_desc">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</string>
+    <string name="onboarding3_desc">Sed in mauris nisl. Mauris nisl ex, commodo et tortor eget, finibus bibendum ex. Aenean ultrices massa in placerat dictum. Donec laoreet enim risus. Donec aliquet at nibh ut hendrerit. </string>
     <string name="back">Back</string>
     <string name="next">Next</string>
     <string name="finish">Finish</string>
     <string name="skip">Skip</string>
     <string name="sign_in">Sign In</string>
     <string name="password">Password</string>
-    <string name="example_mail">furkanyaman@aol.com</string>
+    <string name="example_mail">example@example.com</string>
     <string name="sign_up">Sign Up</string>
     <string name="e_mail">E-Mail</string>
     <string name="username">Username</string>
     <string name="password_repeat">Password Repeat</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="product_image">Product Image</string>
+    <string name="product_description">Product Description</string>
+    <string name="product_title">Product Title</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="sign_out">Sign out</string>
+    <string name="shop_logo">Shop Logo</string>
+    <string name="back_button">BackButton</string>
+    <string name="basket">Basket</string>
+    <string name="close">Close</string>
+    <string name="purchase">Purchase</string>
+    <string name="no_results_found">No results found</string>
 
 </resources>
