@@ -1,8 +1,4 @@
-
-![Logo](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/shop_logo.png?token=GHSAT0AAAAAABZDKBGSXKVJGQ6TWUDCGQVGY3IDOQQ)
-
-    
-# Shop - ShoppingApp
+# <img src="https://drive.google.com/uc?id=1BgVpt10vip8rc63gFwzuc2AzC4I9-lrQ" width="100"> - ShoppingApp
 
 The 'Shop' is an online shopping app. It's made for Pazarama & Patika.dev Kotlin Bootcamp Final Project. It is an android application where you can register and the product data from the internet can be added to the cart and listed and the details can be viewed.
 
@@ -10,12 +6,10 @@ The 'Shop' is an online shopping app. It's made for Pazarama & Patika.dev Kotlin
 FakeStore API was used during the development of the application.
 ## App Screenshoots
 
-Onboarding Screen | Sign In Page | Sign Up Page | Home Page | Search Page | Product Detail Page | Basket Page | Profile Page
---- | --- | --- |--- |--- |--- |--- |---  
-![](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/Onboarding.png?token=GHSAT0AAAAAABZDKBGSLOMUICGTTMLDE6XMY3IC3CA) | ![](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/sign_in.png?token=GHSAT0AAAAAABZDKBGTUVMEP5PSUAHAO5AYY3IDA5Q) | ![](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/sign_up.png?token=GHSAT0AAAAAABZDKBGT2YDXVCSZJ62HVI52Y3IC7LA) | ![](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/home_screen.png?token=GHSAT0AAAAAABZDKBGTJWBN7ZW2BYQMRKYIY3IDFTQ) |  ![](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/search_screen.png?token=GHSAT0AAAAAABZDKBGTGLGNPXXA2KMMMOMWY3IDG3Q) | ![](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/product_detail_screen.png?token=GHSAT0AAAAAABZDKBGTI4M4K6WJRPF3LQBYY3IDIFA) | ![](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/basket_screen.png?token=GHSAT0AAAAAABZDKBGTM2DB7BXNNKE7PKYGY3IDIWQ) | ![](https://raw.githubusercontent.com/yamanf/PazaramaBootcamp-FinalProject/main/ReadMe/profile_screen.png?token=GHSAT0AAAAAABZDKBGT4OUUQOB5E5NMDXSWY3IDJMQ) 
+Onboarding|SignInPage|SignUpPage|HomePage|SearchPage|DetailPage|BasketPage|ProfilePage
+ --- | --- | --- | --- | --- | --- | --- | ---  
+![](https://drive.google.com/uc?id=1yalHx_p-fBrErx3EDB-h0ne9lrhCYjvK)| ![](https://drive.google.com/uc?id=1RrrsuNt4cP1l2cRbBvnVU82KGvN0mrd_) | ![](https://drive.google.com/uc?id=1pJllPAdsQ74MGO1WWG66L8GgvpH-9WcN) | ![](https://drive.google.com/uc?id=1opVnUlypQfUUGFLTdTXULucLCoPPi4ag) |  ![](https://drive.google.com/uc?id=1bCKRNJ4XJv6MCGoPTj81rnU-cpOasRpZ) | ![](https://drive.google.com/uc?id=1nt73AEBtOJGaxCzLv2eYaooKWDujN3km) | ![](https://drive.google.com/uc?id=1EFAaZEgR4K2-W9FF7Q1cx6LnTe60Sfzn) | ![](https://drive.google.com/uc?id=11J9d64gFTS4XD0c8E--SBofZbFUa8CuV) 
 
-
-  
 ## Used technologies
 
 🔧MVVM Architecture with Clean Code
@@ -45,10 +39,10 @@ Onboarding Screen | Sign In Page | Sign Up Page | Home Page | Search Page | Prod
 
 | Renk             | Hex                                                                |
 | ----------------- | ------------------------------------------------------------------ |
-| Darker Blue | ![#1D1CE5](https://via.placeholder.com/10/1D1CE5?text=+) #1D1CE5 |
-| Lighter Blue | ![#4649FF](https://via.placeholder.com/10/4649FF?text=+) #4649FF |
-| Purple | ![#7978FF](https://via.placeholder.com/10/7978FF?text=+) #7978FF |
-| Pink Purple | ![#C47AFF](https://via.placeholder.com/10/C47AFF?text=+) #C47AFF | 
+| Darker Blue | ![](https://via.placeholder.com/10/1D1CE5?text=+) #1D1CE5 |
+| Lighter Blue | ![](https://via.placeholder.com/10/4649FF?text=+) #4649FF |
+| Purple | ![](https://via.placeholder.com/10/7978FF?text=+) #7978FF |
+| Pink Purple | ![](https://via.placeholder.com/10/C47AFF?text=+) #C47AFF | 
 
 ## Thanks
 
