@@ -16,9 +16,6 @@ Onboarding|SignInPage|SignUpPage|HomePage|SearchPage|DetailPage|BasketPage|Profi
  --- | --- | --- | --- | --- | --- | --- | ---  
 ![](https://drive.google.com/uc?id=1yalHx_p-fBrErx3EDB-h0ne9lrhCYjvK)| ![](https://drive.google.com/uc?id=1RrrsuNt4cP1l2cRbBvnVU82KGvN0mrd_) | ![](https://drive.google.com/uc?id=1pJllPAdsQ74MGO1WWG66L8GgvpH-9WcN) | ![](https://drive.google.com/uc?id=1opVnUlypQfUUGFLTdTXULucLCoPPi4ag) |  ![](https://drive.google.com/uc?id=1bCKRNJ4XJv6MCGoPTj81rnU-cpOasRpZ) | ![](https://drive.google.com/uc?id=1nt73AEBtOJGaxCzLv2eYaooKWDujN3km) | ![](https://drive.google.com/uc?id=1EFAaZEgR4K2-W9FF7Q1cx6LnTe60Sfzn) | ![](https://drive.google.com/uc?id=11J9d64gFTS4XD0c8E--SBofZbFUa8CuV) 
 
-## Features
--
-
 ## Used technologies
 
 🔧MVVM Architecture with Clean Code
