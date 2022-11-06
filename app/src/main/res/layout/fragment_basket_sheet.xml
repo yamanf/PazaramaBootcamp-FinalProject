@@ -43,37 +43,42 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvBasketList"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/basketTopBar"
+        app:layout_constraintBottom_toTopOf="@+id/basketBottomBar"
         tools:listitem="@layout/item_basket_list" />
-    <TextView
-        android:id="@+id/tvTotalPrice"
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/basketBottomBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:fontFamily="@font/montserrat"
-        android:text="Total Price: TL"
-        android:textColor="@color/black"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="@+id/btnPurchase"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/btnPurchase" />
-    <Button
-        android:id="@+id/btnPurchase"
-        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
-        android:backgroundTint="@color/purple"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="12sp"
-        android:textColor="@color/white"
-        android:text="@string/purchase"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_goneMarginEnd="16dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@+id/rvBasketList"
-        android:layout_marginEnd="16dp" />
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+        <TextView
+            android:id="@+id/tvTotalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/montserrat"
+            android:text="Total Price: TL"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/btnPurchase"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:backgroundTint="@color/purple"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/purchase"
+            android:layout_marginEnd="8dp"/>
+    </LinearLayout>
+
 
 
 
