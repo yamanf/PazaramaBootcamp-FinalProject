@@ -1,14 +1,23 @@
+
 # <img src="https://drive.google.com/uc?id=1BgVpt10vip8rc63gFwzuc2AzC4I9-lrQ" width="100"> - ShoppingApp
 
 The 'Shop' is an online shopping app. It's made for Pazarama & Patika.dev Kotlin Bootcamp Final Project. It is an android application where you can register and the product data from the internet can be added to the cart and listed and the details can be viewed.
 
 
 FakeStore API was used during the development of the application.
+
+## App Previews
+![](https://media.giphy.com/media/C52lXpPzo0Dm4SpH7k/giphy.gif) | ![](https://media.giphy.com/media/MxkdO6gg8F7CC1dWet/giphy.gif) 
+ --- | --- 
+
 ## App Screenshoots
 
 Onboarding|SignInPage|SignUpPage|HomePage|SearchPage|DetailPage|BasketPage|ProfilePage
  --- | --- | --- | --- | --- | --- | --- | ---  
 ![](https://drive.google.com/uc?id=1yalHx_p-fBrErx3EDB-h0ne9lrhCYjvK)| ![](https://drive.google.com/uc?id=1RrrsuNt4cP1l2cRbBvnVU82KGvN0mrd_) | ![](https://drive.google.com/uc?id=1pJllPAdsQ74MGO1WWG66L8GgvpH-9WcN) | ![](https://drive.google.com/uc?id=1opVnUlypQfUUGFLTdTXULucLCoPPi4ag) |  ![](https://drive.google.com/uc?id=1bCKRNJ4XJv6MCGoPTj81rnU-cpOasRpZ) | ![](https://drive.google.com/uc?id=1nt73AEBtOJGaxCzLv2eYaooKWDujN3km) | ![](https://drive.google.com/uc?id=1EFAaZEgR4K2-W9FF7Q1cx6LnTe60Sfzn) | ![](https://drive.google.com/uc?id=11J9d64gFTS4XD0c8E--SBofZbFUa8CuV) 
+
+## Features
+-
 
 ## Used technologies
 
@@ -51,4 +60,4 @@ Onboarding|SignInPage|SignUpPage|HomePage|SearchPage|DetailPage|BasketPage|Profi
 - [@MertToptas](https://github.com/merttoptas) for the 7 weeks of kotlin training.
 - [My Bootcamp Team](https://github.com/Pazarama-Android-Kotlin-Bootcamp) for being a good team member.
 
-  
+
