@@ -9,12 +9,15 @@ import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.yamanf.shoppingapp.R
+import com.yamanf.shoppingapp.ui.basket.BasketSheetViewModel
 import com.yamanf.shoppingapp.utils.BasketItemModel
 import com.yamanf.shoppingapp.utils.FirebaseManager
+import com.yamanf.shoppingapp.utils.FirebaseManager.Companion.getUserBasket
 import com.yamanf.shoppingapp.utils.Utils.downloadFromUrl
 
 
 class BasketAdapter(private val basketList: List<BasketItemModel>) : RecyclerView.Adapter<BasketAdapter.BasketViewHolder>(){
+
 
     class BasketViewHolder(view: View): RecyclerView.ViewHolder(view){
         // Items initialize here

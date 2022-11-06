@@ -1,9 +1,11 @@
 package com.yamanf.shoppingapp.ui.basket
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.navArgs
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -11,6 +13,7 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 import com.yamanf.shoppingapp.R
 import com.yamanf.shoppingapp.databinding.FragmentBasketSheetBinding
 import com.yamanf.shoppingapp.ui.adapter.BasketAdapter
+import com.yamanf.shoppingapp.ui.auth.AuthActivity
 import com.yamanf.shoppingapp.ui.product.detail.ProductDetailFragmentArgs
 import com.yamanf.shoppingapp.utils.FirebaseManager
 import com.yamanf.shoppingapp.utils.Utils.round
@@ -38,9 +41,7 @@ class BasketSheetFragment : BottomSheetDialogFragment(R.layout.fragment_basket_s
         }
 
         binding.btnPurchase.setOnClickListener(){
-            FirebaseManager.clearBasket()
-            Toast.makeText(requireContext(),"Congrats, order completed!",Toast.LENGTH_LONG).show()
-            dismiss()
+            purchase()
         }
     }
 
@@ -50,6 +51,28 @@ class BasketSheetFragment : BottomSheetDialogFragment(R.layout.fragment_basket_s
             binding.rvBasketList.adapter= BasketAdapter(it)
         }
     }
+
+    private fun purchase(){
+        val builder: AlertDialog.Builder = AlertDialog.Builder(requireContext())
+
+        builder.setMessage("Are you sure you want to complete order?")
+            .setTitle("Complete Order")
+
+        builder.apply {
+            setPositiveButton("Complete Order") { dialog, id ->
+                FirebaseManager.clearBasket()
+                Toast.makeText(requireContext(),"Congrats, order completed!",Toast.LENGTH_LONG).show()
+                dismiss()
+            }
+            setNegativeButton("No") { dialog, id ->
+                Toast.makeText(requireContext(),"You can continue shopping. ",Toast.LENGTH_LONG).show()
+            }
+        }
+        
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
 
     override fun onDestroyView() {
         super.onDestroyView()
