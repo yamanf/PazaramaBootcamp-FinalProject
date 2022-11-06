@@ -19,10 +19,11 @@ class SearchAdapter(private var searchList: Products) : RecyclerView.Adapter<Sea
     Filterable {
 
     class SearchViewHolder(view: View): RecyclerView.ViewHolder(view){
+        // Items initialize here
         private val ivProduct: ImageView = view.findViewById(R.id.ivSearchProduct)
         private val tvTitle: TextView = view.findViewById(R.id.tvSearchTitle)
         private val tvPrice: TextView = view.findViewById(R.id.tvSearchPrice)
-        private val container: ConstraintLayout = view.findViewById(R.id.container)
+        private val container: ConstraintLayout = view.findViewById(R.id.searchContainer)
 
         @SuppressLint("SetTextI18n")
         fun bindItems(item: ProductsItem) {
@@ -34,10 +35,6 @@ class SearchAdapter(private var searchList: Products) : RecyclerView.Adapter<Sea
             }
 
         }
-    }
-    fun filterList(filterlist: Products) {
-        searchList = filterlist
-        notifyDataSetChanged()
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchViewHolder {

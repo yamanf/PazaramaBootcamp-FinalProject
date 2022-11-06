@@ -5,14 +5,14 @@ import com.google.firebase.auth.ktx.auth
 import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.firestore.ktx.toObject
 import com.google.firebase.ktx.Firebase
-import com.yamanf.shoppingapp.data.model.ProductsItem
+
 import com.yamanf.shoppingapp.ui.auth.signin.LoginModel
 import com.yamanf.shoppingapp.ui.auth.signup.RegisterModel
 
 
 
 data class UserModel(val uuid:String = "",val email:String = "",val username:String = "")
-data class BasketItemModel(val amount: Double = 0.0, val name: String = "", val price: Double = 0.0, val imageUrl: String= "")
+data class BasketItemModel(val id:String = "", val amount: Double = 0.0, val name: String = "", val price: Double = 0.0, val imageUrl: String= "")
 
 class FirebaseManager {
 
@@ -85,6 +85,7 @@ class FirebaseManager {
             val uid = Firebase.auth.currentUser?.uid.toString()
             Firebase.firestore.collection("users").document(uid).collection("basketItems").document(id).set(
                 mapOf(
+                    "id" to id,
                     "amount" to amount,
                     "name" to name,
                     "price" to price,
@@ -105,6 +106,7 @@ class FirebaseManager {
                     val docRef = it
                     val basketList = docRef.documents.map {
                         BasketItemModel(
+                            id = it.get("id") as String,
                             amount = it.get("amount") as Double,
                             name = it.get("name") as String,
                             price = it.get("price") as Double,
@@ -119,12 +121,17 @@ class FirebaseManager {
 
         fun deleteItemFromBasket(id:String){
             val uid = Firebase.auth.currentUser?.uid.toString()
-            Firebase.firestore.collection("users").document(uid).collection("basketItems").document("id").delete()
+            Firebase.firestore.collection("users").document(uid).collection("basketItems").document("$id").delete()
         }
 
-
-
-
+        fun clearBasket(){
+            val uid = Firebase.auth.currentUser?.uid.toString()
+            Firebase.firestore.collection("users").document(uid).collection("basketItems").get().addOnSuccessListener {
+                it.documents.forEach(){
+                    it.reference.delete()
+                }
+            }
+        }
 
     }
 }

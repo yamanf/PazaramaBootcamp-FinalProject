@@ -18,7 +18,6 @@ class ProductDetailViewModel @Inject constructor(private val apiRepository: ApiR
     private val productDetailLiveData = MutableLiveData<ProductsItem>()
     val productDetail: LiveData<ProductsItem> = productDetailLiveData
 
-
     fun getProductDetail(productId: String) {
         viewModelScope.launch {
             val productDetail = apiRepository.getProductDetail(productId)

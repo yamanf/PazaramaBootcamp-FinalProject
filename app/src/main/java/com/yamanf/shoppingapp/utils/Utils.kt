@@ -7,22 +7,17 @@ import com.google.android.gms.tasks.Task
 import kotlinx.coroutines.InternalCoroutinesApi
 import kotlinx.coroutines.suspendCancellableCoroutine
 import kotlin.coroutines.resumeWithException
+import kotlin.math.round
 
 object Utils {
-        fun ImageView.downloadFromUrl(url: String?) {
-            Glide.with(context).load(url).into(this)
-        }
 
-    suspend fun <T> Task<T>.await(): T {
-        return suspendCancellableCoroutine { cont ->
-            addOnCompleteListener {
-                if (it.exception != null) {
-                    cont.resumeWithException(it.exception!!)
-                } else {
-                    cont.resume(it.result, null)
-                }
-            }
-        }
+    fun ImageView.downloadFromUrl(url: String?) {
+        Glide.with(context).load(url).into(this)
+    }
+    fun Double.round(decimals: Int): Double {
+        var multiplier = 1.0
+        repeat(decimals) { multiplier *= 10 }
+        return round(this * multiplier) / multiplier
     }
 
 }

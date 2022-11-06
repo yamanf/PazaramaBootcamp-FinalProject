@@ -14,10 +14,10 @@ class BasketSheetViewModel(): ViewModel()  {
             success(it)
         }
     }
-    fun calculateTotalPrice(totalPrice: (Int) -> Unit){
+    fun calculateTotalPrice(totalPrice: (Double) -> Unit){
         FirebaseManager.getUserBasket { list ->
-            var totalPrice = 0
-            totalPrice = list.sumOf { it.price.toInt() * it.amount.toInt() }
+            var totalPrice = 0.0
+            totalPrice = list.sumOf { it.price * it.amount }
             println(totalPrice)
             totalPrice(totalPrice)
         }
