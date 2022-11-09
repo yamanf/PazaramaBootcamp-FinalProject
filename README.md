@@ -1,5 +1,5 @@
 
-# <img src="https://drive.google.com/uc?id=1BgVpt10vip8rc63gFwzuc2AzC4I9-lrQ" width="100"> - ShoppingApp
+# <img src="https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/shop_logo.png" width="100"> - ShoppingApp
 
 The 'Shop' is an online shopping app. It's made for Pazarama & Patika.dev Kotlin Bootcamp Final Project. It is an android application where you can register and the product data from the internet can be added to the cart and listed and the details can be viewed.
 
@@ -14,7 +14,7 @@ FakeStore API was used during the development of the application.
 
 Onboarding|SignInPage|SignUpPage|HomePage|SearchPage|DetailPage|BasketPage|ProfilePage
  --- | --- | --- | --- | --- | --- | --- | ---  
-![](https://drive.google.com/uc?id=1yalHx_p-fBrErx3EDB-h0ne9lrhCYjvK)| ![](https://drive.google.com/uc?id=1RrrsuNt4cP1l2cRbBvnVU82KGvN0mrd_) | ![](https://drive.google.com/uc?id=1pJllPAdsQ74MGO1WWG66L8GgvpH-9WcN) | ![](https://drive.google.com/uc?id=1opVnUlypQfUUGFLTdTXULucLCoPPi4ag) |  ![](https://drive.google.com/uc?id=1bCKRNJ4XJv6MCGoPTj81rnU-cpOasRpZ) | ![](https://drive.google.com/uc?id=1nt73AEBtOJGaxCzLv2eYaooKWDujN3km) | ![](https://drive.google.com/uc?id=1EFAaZEgR4K2-W9FF7Q1cx6LnTe60Sfzn) | ![](https://drive.google.com/uc?id=11J9d64gFTS4XD0c8E--SBofZbFUa8CuV) 
+![](https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/Onboarding.png)| ![](https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/sign_in.png) | ![](https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/sign_up.png) | ![](https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/home_screen.png) |  ![](https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/search_screen.png) | ![](https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/product_detail_screen.png) | ![](https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/basket_screen.png) | ![](https://github.com/yamanf/PazaramaBootcamp-FinalProject/blob/main/ReadMe/profile_screen.png) 
 
 ## Used technologies
 
